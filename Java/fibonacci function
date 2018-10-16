@@ -1,0 +1,32 @@
+public class Solution {
+	
+	public static boolean checkMember(int n){
+				
+		
+      boolean g = false;
+         
+      int tb = 0;
+      int ta = 1;
+      int t = 0;
+      
+      for ( int i = 1 ; i <=n-1; i++) {
+     
+      
+        
+        t = tb  + ta;
+        tb = ta;
+        ta = t; 
+        
+        if (n == t || n==0) {
+        g = true;    
+        break;  
+        }
+          
+    }
+              
+        return g ;
+        
+	}
+	
+
+}
